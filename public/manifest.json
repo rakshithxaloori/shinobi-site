@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Shinobi",
+  "name": "Track your matches and stats from video games",
   "icons": [
     {
       "src": "favicon.ico",
