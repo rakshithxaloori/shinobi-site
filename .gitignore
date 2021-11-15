@@ -23,4 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 **custom.js
-.secret
+public/.well-known
