@@ -13,7 +13,7 @@ a {
 .App-body {
   min-height: 80vh;
   display: flex;
-  padding: 20px;
+  padding: 10px 10px;
   color: black;
   align-items: center;
   background: linear-gradient(
@@ -44,8 +44,6 @@ a {
 
 .Screenshots {
   display: flex;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 .Title {

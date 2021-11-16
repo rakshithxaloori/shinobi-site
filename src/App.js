@@ -60,7 +60,7 @@ function Home() {
       <div className="Screenshots">
         <img
           src={FeedScreenshot}
-          height={600}
+          height={550}
           className="Header-logo"
           alt="Feed Screen"
         />
