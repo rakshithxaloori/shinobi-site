@@ -3,7 +3,7 @@
 }
 
 a {
-  color: white;
+  color: black;
 }
 
 .Store-icons {
@@ -13,9 +13,14 @@ a {
 .App-body {
   min-height: 60vh;
   display: flex;
-  color: black;
   padding: 20px;
   align-items: center;
+  background: linear-gradient(
+    150deg,
+    rgba(255, 64, 129, 1) 0%,
+    rgba(63, 81, 181, 1) 50%,
+    rgba(48, 63, 159, 1) 80%
+  );
 }
 
 .Home {

@@ -7,7 +7,7 @@ const PrivacyPolicy = () => (
     <body className="Text-body">
       <strong>Privacy Policy</strong>{" "}
       <p>
-        Shinobi built the Shinobu app as a Freemium app. This SERVICE is
+        Shinobi built the Shinobi app as a Freemium app. This SERVICE is
         provided by Shinobi at no cost and is intended for use as is.
       </p>{" "}
       <p>
@@ -24,7 +24,7 @@ const PrivacyPolicy = () => (
       </p>{" "}
       <p>
         The terms used in this Privacy Policy have the same meanings as in our
-        Terms and Conditions, which is accessible at Shinobu unless otherwise
+        Terms and Conditions, which is accessible at Shinobi unless otherwise
         defined in this Privacy Policy.
       </p>{" "}
       <p>

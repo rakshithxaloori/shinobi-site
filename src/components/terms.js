@@ -25,14 +25,14 @@ const Terms = () => (
         very clear to you exactly what you’re paying for.
       </p>{" "}
       <p>
-        The Shinobu app stores and processes personal data that you have
+        The Shinobi app stores and processes personal data that you have
         provided to us, in order to provide our Service. It’s your
         responsibility to keep your phone and access to the app secure. We
         therefore recommend that you do not jailbreak or root your phone, which
         is the process of removing software restrictions and limitations imposed
         by the official operating system of your device. It could make your
         phone vulnerable to malware/viruses/malicious programs, compromise your
-        phone’s security features and it could mean that the Shinobu app won’t
+        phone’s security features and it could mean that the Shinobi app won’t
         work properly or at all.
       </p>{" "}
       <div>

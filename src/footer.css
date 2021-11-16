@@ -1,4 +1,6 @@
 .Footer {
+  display: flex;
+  flex-direction: column;
   color: white;
   padding: 10px;
   text-align: left;
@@ -27,8 +29,6 @@
 
 .Footer-store-links {
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .Disclaimer {
