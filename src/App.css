@@ -1,5 +1,5 @@
 .App {
-  background-color: #323232;
+  background-color: white;
 }
 
 a {
@@ -13,18 +13,33 @@ a {
 .App-body {
   min-height: 60vh;
   display: flex;
-  color: white;
+  color: black;
   padding: 20px;
   align-items: center;
 }
 
 .Home {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: auto;
 }
 
 .Store-icons {
   justify-content: center;
+}
+
+.Non-Screenhots {
+  display: flex;
+  flex-direction: column;
+}
+
+.Screenshots {
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .Title {
@@ -41,5 +56,5 @@ a {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  color: white;
+  color: black;
 }
