@@ -3,7 +3,7 @@
 }
 
 a {
-  color: black;
+  color: white;
 }
 
 .Store-icons {
@@ -14,6 +14,7 @@ a {
   min-height: 60vh;
   display: flex;
   padding: 20px;
+  color: black;
   align-items: center;
   background: linear-gradient(
     150deg,
@@ -61,5 +62,5 @@ a {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  color: black;
+  color: white;
 }
