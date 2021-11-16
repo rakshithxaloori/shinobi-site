@@ -11,7 +11,7 @@ a {
 }
 
 .App-body {
-  min-height: 60vh;
+  min-height: 80vh;
   display: flex;
   padding: 20px;
   color: black;
@@ -59,8 +59,12 @@ a {
 }
 
 .Text-body {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   color: white;
+  background-color: black;
+  border-radius: 20px;
+  padding: 20px;
+  align-self: center;
+  justify-content: center;
 }
