@@ -47,7 +47,7 @@ function Home() {
           League of Legends' match history and champion masteries!
         </p>
         <p className="Subtitle">
-          Follow, chat and share matches with your friends!
+          Stalk, follow, chat and share matches with your friends!
         </p>
       </div>
       <div className="Store-icons">

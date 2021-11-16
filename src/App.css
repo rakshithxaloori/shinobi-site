@@ -1,5 +1,5 @@
 .App {
-  background-color: #282c34;
+  background-color: #323232;
 }
 
 a {
@@ -38,7 +38,6 @@ a {
 }
 
 .Text-body {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
