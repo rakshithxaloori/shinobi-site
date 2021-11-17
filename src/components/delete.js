@@ -8,7 +8,7 @@ const Delete = () => (
       <strong>Delete Account</strong>{" "}
       <p>
         To delete an account send an email to{" "}
-        <a href="mailto:support@shinobi.cc">support@shinobi.cc</a>
+        <a href="mailto:hello@shinobi.cc">hello@shinobi.cc</a>
       </p>{" "}
       <p>
         If you are not sure, then please don't break up with us{" "}

@@ -178,7 +178,7 @@ const PrivacyPolicy = () => (
       </p>{" "}
       <p>
         If you have any questions or suggestions about our Privacy Policy, do
-        not hesitate to contact us at support@shinobi.cc.
+        not hesitate to contact us at hello@shinobi.cc.
       </p>{" "}
     </body>
   </div>

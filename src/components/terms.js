@@ -150,7 +150,7 @@ const Terms = () => (
       </p>{" "}
       <p>
         If you have any questions or suggestions about our Terms and Conditions,
-        do not hesitate to contact us at support@shinobi.cc.
+        do not hesitate to contact us at hello@shinobi.cc.
       </p>{" "}
     </body>
   </div>
