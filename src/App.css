@@ -1,38 +1,68 @@
 .App {
-  text-align: center;
+  background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Store-icons {
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-body {
+  min-height: 80vh;
+  display: flex;
+  padding: 10px 10px;
+  color: black;
+  align-items: center;
+  background: linear-gradient(
+    150deg,
+    rgba(255, 64, 129, 1) 0%,
+    rgba(63, 81, 181, 1) 50%,
+    rgba(48, 63, 159, 1) 80%
+  );
+}
+
+.Home {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: auto;
+}
+
+.Store-icons {
+  justify-content: center;
+}
+
+.Non-Screenhots {
+  display: flex;
+  flex-direction: column;
+}
+
+.Screenshots {
+  display: flex;
+}
+
+.Title {
+  font-size: calc(30px + 3vmin);
+  margin-bottom: 10px;
+}
+
+.Subtitle {
+  font-size: calc(10px + 2vmin);
+  margin-top: 10px;
+}
+
+.Text-body {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  padding: 20px;
+  align-self: center;
+  justify-content: center;
 }

@@ -1,0 +1,37 @@
+.Footer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  background-color: black;
+}
+
+.Footer-sections {
+  display: flex;
+  flex-direction: row;
+  border-width: 5px;
+}
+
+.Footer-link {
+  text-decoration: none;
+  color: white;
+}
+
+.Footer-link:hover {
+  text-decoration: underline;
+}
+
+.Footer-item {
+  font-size: small;
+  list-style-type: none;
+}
+
+.Footer-store-links {
+  display: flex;
+}
+
+.Disclaimer {
+  font-size: small;
+  font-style: italic;
+}
