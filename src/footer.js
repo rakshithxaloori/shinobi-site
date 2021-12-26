@@ -46,7 +46,7 @@ const Footer = () => (
         <div className="Footer-column">
           <a href="https://play.google.com/store/apps/details?id=cc.shinobi.android">
             <img
-              src={process.env.PUBLIC_URL + "PlayStore.png"}
+              src={process.env.PUBLIC_URL + "/PlayStore.png"}
               height={77}
               alt="Play Store"
             />

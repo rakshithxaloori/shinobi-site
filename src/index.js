@@ -4,8 +4,6 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-console.log("public url: ", process.env.PUBLIC_URL);
-
 ReactDOM.render(
   <React.StrictMode>
     <App />

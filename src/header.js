@@ -2,13 +2,11 @@ import React from "react";
 
 import "./header.css";
 
-console.log("HEADER", process.env.PUBLIC_URL);
-
 const Header = () => (
   <div className="Header">
     <a className="Header-link" href="/">
       <img
-        src={process.env.PUBLIC_URL + "logo512.png"}
+        src={process.env.PUBLIC_URL + "/logo512.png"}
         height={40}
         className="Header-logo"
         alt="Shinobi"
