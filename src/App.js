@@ -18,7 +18,7 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <body className="App-body">
+        <div className="App-body">
           <Switch>
             <Route path="/legal/privacy-policy">
               <PrivacyPolicy />
@@ -33,7 +33,7 @@ function App() {
               <Home />
             </Route>
           </Switch>
-        </body>
+        </div>
         <Footer />
       </div>
     </Router>

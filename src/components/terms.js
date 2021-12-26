@@ -1,10 +1,11 @@
 import React from "react";
 
 import "../App.css";
+import MailTo from "./mailto";
 
 const Terms = () => (
   <div className="terms">
-    <body className="Text-body">
+    <div className="Text-body">
       <strong>Terms &amp; Conditions</strong>{" "}
       <p>
         By downloading or using the app, these terms will automatically apply to
@@ -150,9 +151,9 @@ const Terms = () => (
       </p>{" "}
       <p>
         If you have any questions or suggestions about our Terms and Conditions,
-        do not hesitate to contact us at hello@shinobi.cc.
+        do not hesitate to contact us at <MailTo />.
       </p>{" "}
-    </body>
+    </div>
   </div>
 );
 
