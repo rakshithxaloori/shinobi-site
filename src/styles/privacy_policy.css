@@ -1,0 +1,18 @@
+.Privacy-policy-list-item {
+  list-style-type: none;
+}
+
+.External-link {
+  color: #fff;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+.External-link:hover {
+  color: lightseagreen;
+  transition: 200ms ease-in;
+}
