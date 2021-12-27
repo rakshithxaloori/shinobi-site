@@ -2,10 +2,6 @@
   background-color: white;
 }
 
-a {
-  color: white;
-}
-
 .Store-icons {
   align-items: center;
 }
@@ -33,20 +29,23 @@ a {
   flex: auto;
 }
 
-.Store-icons {
-  justify-content: center;
-}
-
 .Non-Screenhots {
   display: flex;
   flex-direction: column;
+  margin: 10px 10px 10px 10px;
 }
 
 .Screenshots {
   display: flex;
+  margin: 10px 10px 10px 10px;
+}
+
+.Screenshot {
+  border-radius: 10px;
 }
 
 .Title {
+  font-weight: bold;
   font-size: calc(30px + 3vmin);
   margin-bottom: 10px;
 }
@@ -65,4 +64,18 @@ a {
   padding: 20px;
   align-self: center;
   justify-content: center;
+}
+
+.External-link {
+  color: #fff;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+.External-link:hover {
+  color: lightseagreen;
+  transition: 200ms ease-in;
 }

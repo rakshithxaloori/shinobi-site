@@ -1,14 +1,17 @@
 .Header {
+  display: flex;
+  flex-direction: row;
   background-color: black;
   padding-left: 20px;
   height: fit-content;
+  align-items: center;
 }
 
 .Header-link {
   display: flex;
+  flex-direction: row;
   width: 100px;
   text-decoration: none;
-  flex-direction: row;
   align-items: center;
 }
 
@@ -17,4 +20,25 @@
   padding-top: 0px;
   font-size: 24px;
   font-weight: bold;
+}
+
+.Header-upload-redirect {
+  position: absolute;
+  right: 40px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.Header-upload-redirect:hover {
+  color: lightseagreen;
+  transition: 200ms ease-in;
+}
+
+.Upload-text {
+  padding-left: 10px;
+  font-size: 20px;
 }

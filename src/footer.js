@@ -1,41 +1,59 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import PlayStore from "./components/play_store";
 
 import "./footer.css";
 
 const Footer = () => (
   <div className="Footer">
-    <div className="Footer-sections">
-      <nav>
-        <ul>
-          <li className="Footer-item">
-            <Link to="/legal/privacy-policy" className="Footer-link">
-              Privacy Policy
-            </Link>
-          </li>
-          <li className="Footer-item">
-            <Link to="/legal/terms" className="Footer-link">
-              Terms & Conditions
-            </Link>
-          </li>
-          <li className="Footer-item">
-            <Link to="/account/delete" className="Footer-link">
-              Delete Account
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <div className="Footer-store-links">
-        <PlayStore />
+    <nav className="Footer-container">
+      <div className="Footer-row">
+        <div className="Footer-column">
+          <a
+            className="Footer-link"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="/legal/privacy-policy"
+          >
+            Privacy Policy
+          </a>
+          <a
+            className="Footer-link"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="/legal/terms"
+          >
+            Terms & Conditions
+          </a>
+          <a
+            className="Footer-link"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="/account/delete"
+          >
+            Delete Account
+          </a>
+        </div>
+        <div className="Footer-column">
+          <a
+            className="Footer-link"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.reddit.com/r/shinobi_app/"
+          >
+            <ion-icon name="logo-reddit" />
+            <span style={{ marginLeft: "10px" }}>Reddit</span>
+          </a>
+        </div>
+        <div className="Footer-column">
+          <a href="https://play.google.com/store/apps/details?id=cc.shinobi.android">
+            <img
+              src={process.env.PUBLIC_URL + "/PlayStore.png"}
+              height={77}
+              alt="Play Store"
+            />
+          </a>
+        </div>
       </div>
-    </div>
-    <p className="Disclaimer">
-      Disclaimer: Shinobi isn't endorsed by Riot Games and doesn't reflect the
-      views or opinions of Riot Games or anyone officially involved in producing
-      or managing Riot Games properties. Riot Games, and all associated
-      properties are trademarks or registered trademarks of Riot Games, Inc.
-    </p>
+    </nav>
   </div>
 );
 

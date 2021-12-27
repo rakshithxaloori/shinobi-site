@@ -1,10 +1,12 @@
 import React from "react";
 
 import "../App.css";
+import "../styles/privacy_policy.css";
+import MailTo from "./mailto";
 
 const PrivacyPolicy = () => (
   <div className="privacy-policy">
-    <body className="Text-body">
+    <div className="Text-body">
       <strong>Privacy Policy</strong>{" "}
       <p>
         Shinobi built the Shinobi app as a Freemium app. This SERVICE is
@@ -46,8 +48,9 @@ const PrivacyPolicy = () => (
           app
         </p>{" "}
         <ul>
-          <li>
+          <li className="Privacy-policy-list-item">
             <a
+              className="External-link"
               href="https://www.google.com/policies/privacy/"
               target="_blank"
               rel="noopener noreferrer"
@@ -55,8 +58,9 @@ const PrivacyPolicy = () => (
               Google Play Services
             </a>
           </li>
-          <li>
+          <li className="Privacy-policy-list-item">
             <a
+              className="External-link"
               href="https://firebase.google.com/policies/analytics"
               target="_blank"
               rel="noopener noreferrer"
@@ -64,8 +68,9 @@ const PrivacyPolicy = () => (
               Google Analytics for Firebase
             </a>
           </li>
-          <li>
+          <li className="Privacy-policy-list-item">
             <a
+              className="External-link"
               href="https://www.facebook.com/about/privacy/update/printable"
               target="_blank"
               rel="noopener noreferrer"
@@ -73,8 +78,9 @@ const PrivacyPolicy = () => (
               Facebook
             </a>
           </li>
-          <li>
+          <li className="Privacy-policy-list-item">
             <a
+              className="External-link"
               href="https://expo.io/privacy"
               target="_blank"
               rel="noopener noreferrer"
@@ -178,9 +184,9 @@ const PrivacyPolicy = () => (
       </p>{" "}
       <p>
         If you have any questions or suggestions about our Privacy Policy, do
-        not hesitate to contact us at hello@shinobi.cc.
+        not hesitate to contact us at <MailTo />.
       </p>{" "}
-    </body>
+    </div>
   </div>
 );
 

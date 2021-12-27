@@ -1,14 +1,15 @@
 import React from "react";
 
+import MailTo from "./mailto";
+
 import "../App.css";
 
 const Delete = () => (
   <div className="terms">
-    <body className="Text-body">
+    <div className="Text-body">
       <strong>Delete Account</strong>{" "}
       <p>
-        To delete an account send an email to{" "}
-        <a href="mailto:hello@shinobi.cc">hello@shinobi.cc</a>
+        To delete an account send an email to <MailTo />
       </p>{" "}
       <p>
         If you are not sure, then please don't break up with us{" "}
@@ -24,7 +25,7 @@ const Delete = () => (
         </span>
         )
       </p>
-    </body>
+    </div>
   </div>
 );
 
