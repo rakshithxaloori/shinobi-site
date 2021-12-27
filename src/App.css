@@ -29,20 +29,23 @@
   flex: auto;
 }
 
-.Store-icons {
-  justify-content: center;
-}
-
 .Non-Screenhots {
   display: flex;
   flex-direction: column;
+  margin: 10px 10px 10px 10px;
 }
 
 .Screenshots {
   display: flex;
+  margin: 10px 10px 10px 10px;
+}
+
+.Screenshot {
+  border-radius: 10px;
 }
 
 .Title {
+  font-weight: bold;
   font-size: calc(30px + 3vmin);
   margin-bottom: 10px;
 }
