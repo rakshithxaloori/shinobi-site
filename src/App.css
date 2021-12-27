@@ -65,3 +65,17 @@
   align-self: center;
   justify-content: center;
 }
+
+.External-link {
+  color: #fff;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+.External-link:hover {
+  color: lightseagreen;
+  transition: 200ms ease-in;
+}

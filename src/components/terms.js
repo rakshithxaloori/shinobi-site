@@ -1,6 +1,7 @@
 import React from "react";
 
 import "../App.css";
+import "../styles/terms.css";
 import MailTo from "./mailto";
 
 const Terms = () => (
@@ -18,6 +19,15 @@ const Terms = () => (
         other intellectual property rights related to it, still belong to
         Shinobi.
       </p>{" "}
+      <p>
+        The content - clips - uploaded by you have to be video-gaming clips
+        only. If you find content that is not so, please report. Violation could
+        lead to account suspension or ban.
+      </p>
+      <p>
+        The clips cannot contain sexually explicit content, threats, harassment,
+        or bullying, particularly toward minors.
+      </p>
       <p>
         Shinobi is committed to ensuring that the app is as useful and efficient
         as possible. For that reason, we reserve the right to make changes to
@@ -46,8 +56,9 @@ const Terms = () => (
           the app
         </p>{" "}
         <ul>
-          <li>
+          <li className="Terms-list-item">
             <a
+              className="External-link"
               href="https://policies.google.com/terms"
               target="_blank"
               rel="noopener noreferrer"
@@ -55,8 +66,9 @@ const Terms = () => (
               Google Play Services
             </a>
           </li>
-          <li>
+          <li className="Terms-list-item">
             <a
+              className="External-link"
               href="https://firebase.google.com/terms/analytics"
               target="_blank"
               rel="noopener noreferrer"
@@ -64,8 +76,9 @@ const Terms = () => (
               Google Analytics for Firebase
             </a>
           </li>
-          <li>
+          <li className="Terms-list-item">
             <a
+              className="External-link"
               href="https://www.facebook.com/legal/terms/plain_text_terms"
               target="_blank"
               rel="noopener noreferrer"
@@ -73,8 +86,9 @@ const Terms = () => (
               Facebook
             </a>
           </li>
-          <li>
+          <li className="Terms-list-item">
             <a
+              className="External-link"
               href="https://expo.io/terms"
               target="_blank"
               rel="noopener noreferrer"
