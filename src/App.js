@@ -66,7 +66,7 @@ function Home() {
       </div>
       <div className="Screenshots">
         <img
-          src={process.env.PUBLIC_URL + "/screenshots/ss1.jpg"}
+          src={process.env.PUBLIC_URL + "/screenshots/ss1.png"}
           height={550}
           className="Screenshot"
           alt="Feed Screen"
