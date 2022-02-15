@@ -9,6 +9,7 @@ import "./App.css";
 import PrivacyPolicy from "./components/privacy_policy";
 import Terms from "./components/terms";
 import Delete from "./components/delete";
+import Clip from "./components/clip";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         <Header />
         <div className="App-body">
           <Switch>
+            <Route path="/clip/:post_id">
+              <Clip />
+            </Route>
             <Route path="/legal/privacy-policy">
               <PrivacyPolicy />
             </Route>
