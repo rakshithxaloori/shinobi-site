@@ -10,6 +10,7 @@ import PrivacyPolicy from "./components/privacy_policy";
 import Terms from "./components/terms";
 import Delete from "./components/delete";
 import Clip from "./components/clip";
+import Test from "./components/testffmpeg";
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
               <Delete />
             </Route>
             <Route path="/">
-              <Home />
+              {/* <Home /> */}
+              <Test />
             </Route>
           </Switch>
         </div>
