@@ -44,7 +44,6 @@ const Clip = () => {
     const fetchClip = async () => {
       const onSuccess = (response) => {
         const { post } = response.data.payload;
-        console.log(post);
         setVideoUri(post.clip.url);
         setPost(post);
       };
