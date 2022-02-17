@@ -11,16 +11,18 @@ const Header = () => (
         className="Header-logo"
         alt="Shinobi"
       />
-      <p className="Header-text">Shinobi</p>
+      <p style={{ color: "white", fontSize: 24, fontWeight: "bold" }}>
+        Shinobi
+      </p>
     </a>
     <a
       className="Header-upload-redirect"
       rel="noopener noreferrer"
       target="_blank"
       href="https://upload.shinobi.cc"
+      title="Upload a clip"
     >
       <ion-icon name="cloud-upload-outline" />
-      <p className="Upload-text">Upload a clip</p>
     </a>
   </div>
 );
