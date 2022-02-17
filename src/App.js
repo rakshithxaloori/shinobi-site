@@ -10,13 +10,20 @@ import PrivacyPolicy from "./components/privacy_policy";
 import Terms from "./components/terms";
 import Delete from "./components/delete";
 import Clip from "./components/clip";
+import { darkTheme } from "./utils/theme";
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div style={{ backgroundColor: darkTheme.background }}>
         <Header />
-        <div className="App-body">
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <Switch>
             <Route path="/clip/:post_id">
               <Clip />
@@ -41,39 +48,55 @@ function App() {
   );
 }
 
+const styles = {
+  subtitle: { fontSize: 20, marginTop: 10 },
+};
+
 function Home() {
   return (
-    <div className="Home">
-      <div className="Non-Screenhots">
-        <div>
-          <p className="Title">welcome to shinobi!</p>
-          <p className="Subtitle">
-            Upload your favorite moments from video games!
+    <div
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "center",
+        color: darkTheme.on_background,
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        <div style={{ paddingLeft: 10 }}>
+          <p style={{ fontSize: 30, fontWeight: "bold" }}>
+            welcome to shinobi!
           </p>
+          <p style={styles.subtitle}>One place to share gaming clips</p>
           <div style={{ display: "flex", flexDirection: "row" }}>
-            <p className="Subtitle">
-              You can upload a clip b/w 5 and 60 seconds upto &nbsp;
-            </p>
-            <p className="Subtitle" style={{ textDecoration: "underline" }}>
-              500 MB!
-            </p>
+            <p style={styles.subtitle}>60 seconds clip upto 500 MB!</p>
           </div>
         </div>
-        <a href="https://play.google.com/store/apps/details?id=cc.shinobi.android">
+        <a
+          title="Shinobi on Play Store"
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://play.google.com/store/apps/details?id=cc.shinobi.android"
+        >
           <img
             src={process.env.PUBLIC_URL + "/PlayStore.png"}
             height={77}
-            className="Play-store-button"
             alt="Shinobi on Play Store"
           />
         </a>
       </div>
-      <div className="Screenshots">
+      <div style={{ display: "flex", padding: 10 }}>
         <img
           src={process.env.PUBLIC_URL + "/screenshots/ss1.png"}
           height={550}
-          className="Screenshot"
-          alt="Feed Screen"
+          alt="Home"
         />
       </div>
     </div>

@@ -8,6 +8,7 @@ const VideoJS = (props) => {
   const videoRef = React.useRef(null);
   const playerRef = React.useRef(null);
   const { options, onReady } = props;
+  const style = props.style || {};
 
   React.useEffect(() => {
     // make sure Video.js player is only initialized once
@@ -42,6 +43,7 @@ const VideoJS = (props) => {
   return (
     <div data-vjs-player>
       <video
+        style={style}
         ref={videoRef}
         className="video-js vjs-theme-forest vjs-big-play-centered"
       />

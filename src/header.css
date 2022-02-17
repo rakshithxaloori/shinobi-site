@@ -38,7 +38,6 @@
   transition: 200ms ease-in;
 }
 
-.Upload-text {
-  padding-left: 10px;
-  font-size: 20px;
+ion-icon {
+  pointer-events: none;
 }
