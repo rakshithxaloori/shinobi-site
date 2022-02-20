@@ -188,7 +188,8 @@ const Clip = () => {
         </span>
         {post.tags.length > 0 && (
           <span style={{ fontSize: 12, color: darkTheme.on_surface_subtitle }}>
-            - with {post.tags[0].username}
+            - with {post.tags[0].username}{" "}
+            {post.tags.length > 1 && `${post.tags.length - 1} others`}
           </span>
         )}
       </div>
