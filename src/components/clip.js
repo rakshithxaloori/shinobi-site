@@ -9,6 +9,7 @@ import { getWindowDimensions } from "../utils/window";
 import { clipUrlByNetSpeed } from "../utils/clip";
 import { dateTimeDiff } from "../utils";
 import { darkTheme } from "../utils/theme";
+import Share from "./share_clip";
 
 let PROFILE_ICON_SIZE = 50;
 let GAME_ICON_SIZE = 15;
@@ -83,119 +84,134 @@ const Clip = () => {
     <div
       style={{
         display: "flex",
-        flexDirection: "column",
+        flexDirection: isMobile ? "column" : "row",
+        flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        paddingTop: isMobile ? 20 : 0,
-        paddingBottom: isMobile ? 20 : 0,
-        margin: isMobile ? 0 : 20,
-        width: isMobile ? windowDimensions.width : windowDimensions.width * 0.9,
-        maxHeight: windowDimensions.width * 0.9,
-        backgroundColor: darkTheme.surface,
-        borderRadius: isMobile ? 0 : 10,
       }}
     >
-      <Helmet>
-        <title>{post.title} | Shinobi</title>
-      </Helmet>
       <div
         style={{
           display: "flex",
+          flex: 2,
           flexDirection: "column",
-          alignSelf: "flex-start",
-          marginTop: 15,
-          marginLeft: 15,
+          justifyContent: "center",
+          alignItems: "center",
+          marginLeft: isMobile ? 0 : 20,
+          marginRight: isMobile ? 0 : 10,
+          marginTop: 10,
           marginBottom: 10,
+          backgroundColor: darkTheme.surface,
+          borderRadius: isMobile ? 0 : 10,
         }}
       >
+        <Helmet>
+          <title>{post.title} | Shinobi</title>
+        </Helmet>
         <div
           style={{
             display: "flex",
-            flexDirection: "row",
+            flexDirection: "column",
+            alignSelf: "flex-start",
+            marginTop: 15,
+            marginLeft: 15,
+            marginBottom: 10,
           }}
         >
-          <img
-            style={{
-              height: PROFILE_ICON_SIZE,
-              width: PROFILE_ICON_SIZE,
-              borderRadius: PROFILE_ICON_SIZE / 2,
-            }}
-            alt={post.posted_by.username}
-            src={post.posted_by.picture}
-          />
           <div
             style={{
               display: "flex",
-              flexDirection: "column",
-              marginLeft: 10,
-              marginTop: 5,
+              flexDirection: "row",
             }}
           >
+            <img
+              style={{
+                height: PROFILE_ICON_SIZE,
+                width: PROFILE_ICON_SIZE,
+                borderRadius: PROFILE_ICON_SIZE / 2,
+              }}
+              alt={post.posted_by.username}
+              src={post.posted_by.picture}
+            />
             <div
               style={{
                 display: "flex",
-                flexDirection: "row",
-                color: darkTheme.on_surface_title,
-                marginBottom: 3,
+                flexDirection: "column",
+                marginLeft: 10,
+                marginTop: 5,
               }}
             >
-              <span style={{ fontWeight: "bold" }}>
-                {post.posted_by.username}
-              </span>
-              <span style={{ marginLeft: 5, marginRight: 5 }}>{"\u0387"}</span>
-              <span>{dateTimeDiff(post.created_datetime)} ago</span>
-            </div>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                color: darkTheme.on_surface_subtitle,
-              }}
-            >
-              <img
+              <div
                 style={{
-                  height: GAME_ICON_SIZE,
-                  width: GAME_ICON_SIZE,
-                  borderRadius: GAME_ICON_SIZE / 2,
+                  display: "flex",
+                  flexDirection: "row",
+                  color: darkTheme.on_surface_title,
+                  marginBottom: 3,
                 }}
-                alt={post.game.name}
-                src={post.game.logo_url}
-              />
-              <span style={{ marginLeft: 5, fontSize: GAME_ICON_SIZE - 2 }}>
-                {post.game.name}
-              </span>
+              >
+                <span style={{ fontWeight: "bold" }}>
+                  {post.posted_by.username}
+                </span>
+                <span style={{ marginLeft: 5, marginRight: 5 }}>
+                  {"\u0387"}
+                </span>
+                <span>{dateTimeDiff(post.created_datetime)} ago</span>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  color: darkTheme.on_surface_subtitle,
+                }}
+              >
+                <img
+                  style={{
+                    height: GAME_ICON_SIZE,
+                    width: GAME_ICON_SIZE,
+                    borderRadius: GAME_ICON_SIZE / 2,
+                  }}
+                  alt={post.game.name}
+                  src={post.game.logo_url}
+                />
+                <span style={{ marginLeft: 5, fontSize: GAME_ICON_SIZE - 2 }}>
+                  {post.game.name}
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignSelf: "flex-start",
-          marginLeft: 20,
-          marginBottom: 10,
-        }}
-      >
-        <span
+        <div
           style={{
-            fontSize: 15,
-            marginBottom: 5,
-            color: darkTheme.on_surface_title,
+            display: "flex",
+            flexDirection: "column",
+            alignSelf: "flex-start",
+            marginLeft: 20,
+            marginBottom: 10,
           }}
         >
-          {post.title}
-        </span>
-        {post.tags.length > 0 && (
-          <span style={{ fontSize: 12, color: darkTheme.on_surface_subtitle }}>
-            - with {post.tags[0].username}{" "}
-            {post.tags.length > 1 && `${post.tags.length - 1} others`}
+          <span
+            style={{
+              fontSize: 15,
+              marginBottom: 5,
+              color: darkTheme.on_surface_title,
+            }}
+          >
+            {post.title}
           </span>
-        )}
+          {post.tags.length > 0 && (
+            <span
+              style={{ fontSize: 12, color: darkTheme.on_surface_subtitle }}
+            >
+              - with {post.tags[0].username}{" "}
+              {post.tags.length > 1 && `${post.tags.length - 1} others`}
+            </span>
+          )}
+        </div>
+        {typeof post?.id === "string" ? (
+          <VideoJS options={videoOptions} style={videoStyle} />
+        ) : null}
       </div>
-      {typeof post?.id === "string" ? (
-        <VideoJS options={videoOptions} style={videoStyle} />
-      ) : null}
+      <Share post={post} />
     </div>
   );
 };
