@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Helmet from "react-helmet";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 
@@ -94,6 +95,9 @@ const Clip = () => {
         borderRadius: isMobile ? 0 : 10,
       }}
     >
+      <Helmet>
+        <title>{post.title} | Shinobi</title>
+      </Helmet>
       <div
         style={{
           display: "flex",
