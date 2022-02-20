@@ -1,4 +1,5 @@
 import React from "react";
+import Helmet from "react-helmet";
 
 import "../App.css";
 import "../styles/privacy_policy.css";
@@ -6,6 +7,9 @@ import MailTo from "./mailto";
 
 const PrivacyPolicy = () => (
   <div className="privacy-policy">
+    <Helmet>
+      <title>Privacy Policy | Shinobi</title>
+    </Helmet>
     <div className="Text-body">
       <strong>Privacy Policy</strong>
       <p>
