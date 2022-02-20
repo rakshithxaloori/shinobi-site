@@ -1,4 +1,5 @@
 import React from "react";
+import Helmet from "react-helmet";
 
 import MailTo from "./mailto";
 
@@ -6,6 +7,9 @@ import "../App.css";
 
 const Delete = () => (
   <div className="terms">
+    <Helmet>
+      <title>Delete Account | Shinobi</title>
+    </Helmet>
     <div className="Text-body">
       <strong>Delete Account</strong>{" "}
       <p>

@@ -1,4 +1,5 @@
 import React from "react";
+import Helmet from "react-helmet";
 
 import "../App.css";
 import "../styles/terms.css";
@@ -6,6 +7,9 @@ import MailTo from "./mailto";
 
 const Terms = () => (
   <div className="terms">
+    <Helmet>
+      <title>Terms | Shinobi</title>
+    </Helmet>
     <div className="Text-body">
       <strong>Terms &amp; Conditions</strong>{" "}
       <p>
