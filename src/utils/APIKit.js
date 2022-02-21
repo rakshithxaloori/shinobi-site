@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export let API_ENDPOINT = undefined;
-if (process.env.CI_CD_STAGE === "production")
+if (process.env.REACT_APP_CI_CD_STAGE === "production")
   API_ENDPOINT = `https://${process.env.REACT_APP_BASE_API_ENDPOINT}`;
 else API_ENDPOINT = `http://${process.env.REACT_APP_BASE_API_ENDPOINT}`;
 
